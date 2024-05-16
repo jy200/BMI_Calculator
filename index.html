@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="kg-cm-Convert">
+            Measure in kg and cm 
+            <input id="switchMeasure" type="checkbox">
+        </div>
+        
+        <div class="defaultMeasure">
+            <div id="inchHeight">
+                Height (inches):
+                <input class="heightInput" type="number" min="0" max="8"/>
+                '
+                <input class="heightInput" type="number" min="0" max="12"/>
+                "
+            </div>
+            <div id="poundWeight">
+                Weight (lb):
+                <input class="weightInput" type="number" min="0" max="1000"/>
+            </div>
+        </div>
+
+        <div class="altMeasure">
+            <div id="cmHeight">
+                Height (cm):
+                <input class="heightInput2" type="number" min="0" max="1000"/>
+            </div>
+            <div id="kgWeight">
+                Weight (kg):
+                <input class="weightInput2" type="number" min="0" max="1000"/>
+            </div>
+        </div>
+
+        <input id="submitBox" type="submit">
+        <div class="BMI-container">
+            <div>YOUR BMI IS:</div> 
+            <div id="BMI-number">100</div>
+        </div>
+        <div>
+            <img src="BMI-chart.svg">
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
