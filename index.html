@@ -3,42 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI Calculator</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
 </head>
 <body>
     <div class="container">
+        <h1 id="title">BMI Calculator</h1>
         <div class="kg-cm-Convert">
             Measure in kg and cm 
-            <input id="switchMeasure" type="checkbox">
+            <input id="switchMeasure" type="checkbox" autocomplete="off">
         </div>
         
         <div class="defaultMeasure">
-            <div id="inchHeight">
-                Height (inches):
-                <input class="heightInput" type="number" min="0" max="8"/>
-                '
-                <input class="heightInput" type="number" min="0" max="12"/>
-                "
+            <div class="inner-container">
+                Height (ft, inches):
+                <div id="inchHeight">
+                    <input id="defHeight-1" class="heightInput" type="number" autocomplete="off"/>
+                    <input id="defHeight-2" class="heightInput" type="number" autocomplete="off"/>
+                </div>
             </div>
-            <div id="poundWeight">
+            <div class="inner-container">
                 Weight (lb):
-                <input class="weightInput" type="number" min="0" max="1000"/>
+                <div>
+                    <input id="defWeight" class="weightInput" type="number" autocomplete="off"/>
+                </div>
             </div>
         </div>
 
         <div class="altMeasure">
-            <div id="cmHeight">
+            <div class="inner-container">
                 Height (cm):
-                <input class="heightInput2" type="number" min="0" max="1000"/>
+                <div id="cmHeight">
+                    <input id="altHeight" class="heightInput2" type="number" autocomplete="off"/>
+                </div>
             </div>
-            <div id="kgWeight">
+            <div class="inner-container">
                 Weight (kg):
-                <input class="weightInput2" type="number" min="0" max="1000"/>
+                <div id="kgWeight">
+                    <input id="altWeight" class="weightInput2" type="number" autocomplete="off"/>
+                </div>
             </div>
         </div>
 
-        <input id="submitBox" type="submit">
+        <input id="submitBox" type="submit" value="Calculate">
         <div class="BMI-container">
             <div>YOUR BMI IS:</div> 
             <div id="BMI-number">100</div>
